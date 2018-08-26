@@ -31,7 +31,27 @@ class Roulette {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    const roulette = new Roulette(['dima', 'edu', 'fran', 'jorge', 'melvin','miguel','néstor']);
+    let roulette = null;
+    let participants = [];
+    const participantsElements = document.querySelectorAll("#participants li");
+    for (let p of participantsElements) {
+        const input = p.querySelector("input");
+        input.addEventListener("change", () => {
+            participants = [];
+            for (let p of participantsElements) {
+                const input = p.querySelector("input");
+                if (input.checked) {
+                    participants.push(input.value)
+                }
+            }
+            roulette = new Roulette(participants);
+        });
+        if (input.checked) {
+            participants.push(input.value)
+        }
+    }
+
+    roulette = new Roulette(participants);
 
     document.querySelector(".roulette").addEventListener("click", () => {
         const id = setInterval( () => {

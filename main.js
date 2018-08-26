@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow, Menu } = require('electron');
 
 let win;
 
@@ -7,7 +7,7 @@ function createWindow () {
         alwaysOnTop: true,
         resizable: false,
         width: 680,
-        height: 120
+        height: 160
     });
     win.setMenu(null);
     win.setAlwaysOnTop(true, "floating");

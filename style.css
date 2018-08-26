@@ -28,3 +28,14 @@
     display: flex;
     align-content: center;
 }
+
+li {
+    padding: 0 5px;
+    display: inline-block;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+input, label {
+    vertical-align: middle;
+}
