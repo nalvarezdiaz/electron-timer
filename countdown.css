@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+body {
+    background: #222222;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.countdown-container {
+    height: 83px;
+    margin: 10px;
+    background: #10e6ce;
+    border-radius: 5px;
+    display: flex;
+    align-content: center;
+}
+
+.countdown-hhmmss {
+    min-width: 370px;
+}
+
+.countdown-hhmmss .digit-cell {
+    width: calc(100% / 7 - 10px);
+}
+
+.countdown-mmss {
+    min-width: 250px;
+}
+
+.countdown-mmss .digit-cell {
+    width: calc(100% / 5 - 10px);
+}
+
+.countdown-ss {
+    min-width: 120px;
+}
+
+.countdown-ss .digit-cell {
+    width: calc(100% / 2 - 10px);
+}
+
+.countdown-container .digit-cell {
+    height: calc(100% - 10px);
+    margin: 5px;
+}
+
+.digit-cell .digit-number,
+.digit-cell .digit-separator {
+    margin: 5px;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 3em;
+}
+
+.digit-number.digit-zero::after {
+    content: '0';
+}
+
+.digit-number.digit-one::after {
+    content: '1';
+}
+
+.digit-number.digit-two::after {
+    content: '2';
+}
+
+.digit-number.digit-three::after {
+    content: '3';
+}
+
+.digit-number.digit-four::after {
+    content: '4';
+}
+
+.digit-number.digit-five::after {
+    content: '5';
+}
+
+.digit-number.digit-six::after {
+    content: '6';
+}
+
+.digit-number.digit-seven::after {
+    content: '7';
+}
+
+.digit-number.digit-eight::after {
+    content: '8';
+}
+
+.digit-number.digit-nine::after {
+    content: '9';
+}
+
+.digit-cell .digit-separator::after {
+    content: ':';
+}

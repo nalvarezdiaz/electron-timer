@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daily Time</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="countdown.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+<body>
+    <div class="row">
+        <div class="col">
+            <div class="countdown-container countdown-mmss" data-format="mm:ss" data-mode="down"></div>
+        </div>
+        <div class="col buttons">
+            <button id="start-button" class="countdown-button"><i class="fas fa-play"></i></button>
+            <button id="stop-button" class="countdown-button"><i class="fas fa-stop"></i></button>
+            <button id="add-button" class="countdown-button"><i class="fas fa-plus"></i></button>
+            <button id="sub-button" class="countdown-button"><i class="fas fa-minus"></i></button>
+        </div>
+    </div>
+    <script src="countdown.js"></script>
+</body>
+</html>
