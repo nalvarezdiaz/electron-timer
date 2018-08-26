@@ -39,6 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 100);
         setTimeout(() => {
             clearInterval(id);
-        }, Math.floor(Math.random() * 3500) + 2500 );
+        }, Math.floor(Math.random() * 2500) + 1500 );
     });
 });
