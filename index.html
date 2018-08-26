@@ -3,13 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Daily Time</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="countdown.css"/>
+    <link rel="stylesheet" href="roulette.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
           integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 <body>
     <div class="row">
+        <div class="col">
+            <div class="roulette">
+                <div class="cells">
+                    <div>Spin</div>
+                </div>
+            </div>
+        </div>
         <div class="col">
             <div class="countdown-container countdown-mmss" data-format="mm:ss" data-mode="down"></div>
         </div>
@@ -21,5 +30,6 @@
         </div>
     </div>
     <script src="countdown.js"></script>
+    <script src="roulette.js"></script>
 </body>
 </html>

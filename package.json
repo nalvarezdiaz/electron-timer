@@ -1,7 +1,7 @@
 {
   "name": "Daily",
   "version": "1.0.0",
-  "description": "Daily counter",
+  "description": "Daily roulette and timer",
   "main": "main.js",
   "scripts": {
     "start": "electron .",

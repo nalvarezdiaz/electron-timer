@@ -6,7 +6,7 @@ function createWindow () {
     win = new BrowserWindow({
         alwaysOnTop: true,
         resizable: false,
-        width: 400,
+        width: 680,
         height: 120
     });
     win.setMenu(null);
