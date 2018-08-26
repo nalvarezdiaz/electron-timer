@@ -1,14 +1,24 @@
 {
-  "name": "daily",
+  "name": "Daily",
   "version": "1.0.0",
-  "description": "Daily roulette and counter",
+  "description": "Daily counter",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "author": "Néstor Álvarez Díaz",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^2.0.8"
+    "electron": "^2.0.8",
+    "electron-builder": "^20.28.2"
+  },
+  "build": {
+    "appId": "com.nalvared.daily",
+    "linux": {
+      "category": "Utility"
+    },
+    "target": "AppImage"
   }
 }
