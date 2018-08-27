@@ -17,8 +17,12 @@
   "build": {
     "appId": "com.nalvared.daily",
     "linux": {
-      "category": "Utility"
+      "category": "Utility",
+      "target": "AppImage"
     },
-    "target": "AppImage"
+    "mac": {
+      "category": "public.app-category.utilities",
+      "target": "pkg"
+    }
   }
 }
