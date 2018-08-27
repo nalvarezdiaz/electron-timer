@@ -125,6 +125,9 @@ class Countdown {
     }
 
     start() {
+        if (this.intervalID != null) {
+            this.stop();
+        }
         this.intervalID = setInterval( () => {
             switch (this.mode) {
                 case "down":
@@ -152,6 +155,7 @@ class Countdown {
 
     stop() {
         clearInterval(this.intervalID);
+        this.intervalID = null;
         setTimeout(() => {
             this.initialize();
         }, 1000);
@@ -159,7 +163,7 @@ class Countdown {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    let secs = 90;
+    let secs = 60;
     let isPressed = null;
     let countdown = new Countdown(secs);
 
